@@ -24,6 +24,11 @@ function register_extended_blocks() {
 	$build_dir = __DIR__ . '/build/blocks';
 	$manifest  = __DIR__ . '/build/blocks-manifest.php';
 
+	// No blocks built yet — gracefully skip.
+	if ( ! file_exists( $manifest ) ) {
+		return;
+	}
+
 	if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) {
 		wp_register_block_types_from_metadata_collection( $build_dir, $manifest );
 	} elseif ( function_exists( 'wp_register_block_metadata_collection' ) ) {
