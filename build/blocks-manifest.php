@@ -1,0 +1,27 @@
+<?php
+// This file is generated. Do not modify it manually.
+return array(
+	'news-carousel' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'runpartner/news-carousel',
+		'version' => '0.1.0',
+		'title' => 'News Carousel',
+		'category' => 'widgets',
+		'icon' => 'slides',
+		'description' => 'Horizontal carousel of latest news posts with autoplay.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'interactivity' => true
+		),
+		'textdomain' => 'extended-multi-block',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScriptModule' => 'file:./view.js'
+	)
+);
